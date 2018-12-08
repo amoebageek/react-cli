@@ -1,0 +1,22 @@
+{
+  "name": "ts-react-cli",
+  "version": "0.0.2",
+  "description": "cli to scaffold basic ts and react project with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "say-hello":"./cli/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amoebageek/react-cli.git"
+  },
+  "author": "anujay kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amoebageek/react-cli/issues"
+  },
+  "homepage": "https://github.com/amoebageek/react-cli#readme"
+}
