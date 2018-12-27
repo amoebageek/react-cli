@@ -1,6 +1,6 @@
 {
   "name": "ts-react-cli",
-  "version": "0.0.2",
+  "version": "0.0.1-beta.4",
   "description": "cli to scaffold basic ts and react project with webpack",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/amoebageek/react-cli#readme",
   "dependencies": {
+    "get-installed-path": "^4.0.8",
     "inquirer": "^6.2.1",
     "ncp": "^2.0.0",
     "ora": "^3.0.0"

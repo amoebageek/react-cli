@@ -1,21 +1,23 @@
-/**
- * Pizza delivery prompt example
- * run example by writing `node pizza.js` in your console
- */
-
+#! /usr/bin/env node 
 'use strict';
+
 const inquirer = require('inquirer');
 const {ncp} = require('ncp');
 const fs = require('fs');
 const {exec} = require('child_process');
 const ora = require('ora');
+const { getInstalledPath } = require('get-installed-path')
 const spinner = new ora();
+let installedPath = '/';
 //const process = require('child_process');
 /**
  * Basic constants for operations
  */
 
- const TSAppInDirPath = './templates/ts/app';
+getInstalledPath('ts-react-cli').then((path) => {
+
+
+ const TSAppInDirPath = `${path}/templates/ts/app`;
  const TSAppOutDirPath = './';
  const AppDirName = 'sample';
 
@@ -59,6 +61,9 @@ function updatePackageJSON (){
                         console.log('exec error: ' + error);
                   }
                   stopSpinner();
+                  exec('npm start', error => {
+                    if (error) throw error;
+                  });
                 })
               } catch (e) {
                 console.log('Exception', e);
@@ -100,3 +105,4 @@ const createAppClone = async () => {
     });
 }
 createAppClone();
+});
