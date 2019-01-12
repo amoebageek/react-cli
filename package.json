@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "say-hello": "./cli/script.js"
+    "create-react-ts": "./cli/script.js"
   },
   "repository": {
     "type": "git",
