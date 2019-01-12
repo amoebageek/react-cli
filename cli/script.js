@@ -61,9 +61,8 @@ function updatePackageJSON (){
                         console.log('exec error: ' + error);
                   }
                   stopSpinner();
-                  exec('npm start', error => {
-                    if (error) throw error;
-                  });
+                  console.log('Application installed');
+                  process.exit();
                 })
               } catch (e) {
                 console.log('Exception', e);

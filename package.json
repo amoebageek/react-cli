@@ -1,6 +1,6 @@
 {
   "name": "ts-react-cli",
-  "version": "0.0.1-beta.6",
+  "version": "0.0.1-beta.7",
   "description": "cli to scaffold basic ts and react project with webpack",
   "main": "index.js",
   "scripts": {
