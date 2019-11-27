@@ -1,0 +1,32 @@
+{
+    "extends": ["tslint-microsoft-contrib"],
+    "rulesDirectory": ["tslint-plugin-prettier"],
+    "rules": {
+        "prettier": [true, ".prettierrc"],
+        "interface-name": [true, "never-prefix"],
+        "indent": [true, "spaces", 4],
+        "no-default-export": false,
+        "blank-lines": [
+            true,
+            {
+                "after-imports": 2,
+                "above-conditionals": 1,
+                "above-methods": 1
+            }
+        ],
+        "defaultSeverity": "error",
+        "extends": ["tslint:recommended"],
+        "jsRules": {},
+        "rules": {
+            "eofline": false,
+            "no-trailing-whitespace": false,
+            "comment-format": false,
+            "quotemark": false,
+            "no-console": false,
+            "one-line": false,
+            "no-consecutive-blank-lines": false,
+            "curly": false
+        },
+        "rulesDirectory": []
+    }
+}
