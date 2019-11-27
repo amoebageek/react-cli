@@ -1,6 +1,6 @@
 {
   "name": "create-react-ts",
-  "version": "0.1.1-beta.0",
+  "version": "0.1.2-beta.0",
   "description": "cli to scaffold basic ts and react project with webpack",
   "main": "index.js",
   "scripts": {
