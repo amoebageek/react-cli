@@ -14,7 +14,7 @@ let installedPath = '/';
  * Basic constants for operations
  */
 
-getInstalledPath('ts-react-cli').then((path) => {
+getInstalledPath('create-react-ts').then((path) => {
 
 
  const TSAppInDirPath = `${path}/templates/ts/app`;

@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
 const TSLintPlugin = require('tslint-webpack-plugin');
+const webpack = require("webpack");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     resolve: {
@@ -44,6 +46,11 @@ module.exports = {
                 },
             },
         },
+        minimize: true,
+        minimizer: [new UglifyJsPlugin({
+              include: /\.min\.js$/
+        })]
+          
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -67,5 +74,6 @@ module.exports = {
                 }
             });
         },
+        
     ],
 };
