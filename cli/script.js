@@ -17,7 +17,7 @@ let installedPath = '/';
 getInstalledPath('create-react-ts').then((path) => {
 
 
- const TSAppInDirPath = `${path}/templates/ts/app`;
+ const TSAppInDirPath = `${path}/templates/ts`;
  const TSAppOutDirPath = './';
  const AppDirName = 'sample';
 
