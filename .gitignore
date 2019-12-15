@@ -2,4 +2,6 @@ node_modules/**
 package-lock.json
 sample/
 yarn.lock
+templates/ts/yarn.lock
+
 node_modules
